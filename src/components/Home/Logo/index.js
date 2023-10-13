@@ -8,7 +8,9 @@ const Logo = () => {
     const outlineLogoRef = useRef();
     const solidLogoRef = useRef();
 
-   /* useEffect(() => {
+   /* Need to fix this portion, want to include the logo animation sliding down on home screen. Possibly a different 'L' logo. 
+   
+   useEffect(() => {
     
         gsap
         .timeline()
