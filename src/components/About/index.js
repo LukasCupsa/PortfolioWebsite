@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
+//change the about page to include photo and better text formation, possibly a timeline with hobbies, accolades, education, etc.
+
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
