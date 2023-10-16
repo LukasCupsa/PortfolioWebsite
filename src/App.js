@@ -1,3 +1,4 @@
+//Main app
 import './App.scss'
 import { Routes, Route } from 'react-router-dom'
 import  Layout from './components/Layout'
@@ -7,6 +8,7 @@ import Contact from './components/Contact'
 
 function App() {
   return (
+  //Routes for each page, add a projects page
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
