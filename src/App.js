@@ -8,7 +8,7 @@ import Contact from './components/Contact'
 
 function App() {
   return (
-  //Routes for each page,  TO-DO: Add a project page to display other personal projects
+  //Routes for each page, TO-DO: Add a project page to display other personal projects
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
