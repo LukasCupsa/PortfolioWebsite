@@ -36,7 +36,16 @@
 
 
 
+
 .svg-container {
     stroke: #ffd700;
     stroke-width: 10;
+}
+
+.front-logo {
+    //I want to adjust the logo size so it depends on display size (can use vh and vw) but not all displays will have the same proportions, meaning the logo could end up VERY stretched
+    width: 600px;
+    height: 600px;
+    padding-top: 10%;
+    padding-right: 15%;
 }

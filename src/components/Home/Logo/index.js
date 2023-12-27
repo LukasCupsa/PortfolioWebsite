@@ -28,7 +28,7 @@ const Logo = () => {
     <img
       src={LogoS}
       alt="Logo"
-      style={{ opacity: opacity, float: "right", width: 800, height: 800, paddingRight: 100, paddingTop: 100}}
+      style={{ opacity: opacity, float: "right"}}
       className='front-logo'
     />
   );
