@@ -1,40 +1,48 @@
 import './index.scss'
 import LogoS from '../../../assets/images/logo-s.png'
-import { useRef } from 'react'
+//import { useRef } from 'react'
 
+import React, { useState, useEffect } from "react";
+//import "./ImageSlider.css";
+
+// Define a component for the logo
+const Logo = () => {
+  // Use state to control the opacity of the logo
+  const [opacity, setOpacity] = useState(0);
+
+  // Use effect to fade in the logo after mounting
+  useEffect(() => {
+    // Set a timeout to change the opacity to 1 after 1 second
+    const timer = setTimeout(() => {
+      setOpacity(1);
+    }, 1000);
+
+    // Clean up the timer on unmounting
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
+  // Return the logo element with inline style for opacity and alignment
+  return (
+    <img
+      src={LogoS}
+      alt="Logo"
+      style={{ opacity: opacity, float: "right"}}
+      className='front-logo'
+    />
+  );
+};
+
+export default Logo
+
+/*
 const Logo = () => {
 
     const bgRef = useRef();
     const outlineLogoRef = useRef();
     const solidLogoRef = useRef();
 
-   /* Need to fix this portion, want to include the logo animation sliding down on home screen. Possibly a different 'L' logo. 
-   
-   useEffect(() => {
-    
-        gsap
-        .timeline()
-          .to(bgRef.current, {
-            duration: 1,
-            opacity: 1,
-          })
-          .from(outlineLogoRef.current, {
-            drawSVG: 0,
-            duration: 20,
-          })
-    
-        gsap.fromTo(
-          solidLogoRef.current,
-          {
-            opacity: 0,
-          },
-          {
-            opacity: 1,
-            delay: 4,
-            duration: 4,
-          }
-        )
-      }, [])*/
     
     return (
         <div className='logo-container' ref={bgRef}>
@@ -62,3 +70,5 @@ const Logo = () => {
 }
 
 export default Logo
+
+*/
