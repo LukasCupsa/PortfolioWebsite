@@ -42,7 +42,7 @@ const Home = () => {
                 <h2>Fullstack Developer / Queen's University ECEi / Sci '27</h2>
                 <Link to ="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
-            <Logo />
+            //<Logo />
         </div>
         <Loader type='pacman' />
         </>
