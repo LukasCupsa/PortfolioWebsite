@@ -1,3 +1,4 @@
+// Convert into a Projects / About Page
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect } from 'react'
